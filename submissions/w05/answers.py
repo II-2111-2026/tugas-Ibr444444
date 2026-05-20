@@ -61,8 +61,8 @@ A) PMF.
 B) PDF.
 C) CDF.
 D) MGF."""
-    # Variabel acak diskrit → Probability Mass Function (PMF)
-    return "A"
+    # P(X ≤ x) adalah Cumulative Distribution Function (CDF)
+    return "C"
 
 
 def q07() -> str:
@@ -84,11 +84,8 @@ def q08() -> float:
 
 def q09() -> float:
     """[Numeric] Hitung (X) untuk variabel pada soal nomor 8."""
-    # E[X]  = 0.6
-    # E[X²] = 0²×0.4 + 1²×0.6 = 0.6
     # Var(X) = E[X²] − (E[X])² = 0.6 − 0.36 = 0.24
-    # σ(X)   = √0.24 ≈ 0.4899
-    return round(math.sqrt(0.24), 4)
+    return 0.24
 
 
 def q10() -> float:
@@ -107,6 +104,5 @@ nilai harapannya?"""
 
 def q12() -> float:
     """[Numeric] Jika (X) = 4, berapakah (3X+5)?"""
-    # σ(aX+b) = |a|·σ(X)  → konstanta b tidak mempengaruhi sebaran
-    # σ(3X+5) = 3 × 4 = 12
-    return 12.0
+    # Var(aX+b) = a²·Var(X) → Var(3X+5) = 9 × 4 = 36
+    return 36.0
